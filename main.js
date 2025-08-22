@@ -42,7 +42,7 @@ let emptyValue = null;
 console.log(emptyValue);
 
 //Objects
-let person= {
+let person = {
     firstName: "Jane",
     lastName: "Doe",
     age: 25,
@@ -66,3 +66,80 @@ let givenName = "Ssemwanga";
 let otherName = "John";
 const fullName = surname + " " + givenName + " " + otherName;
 console.log(fullName);
+
+// Conditional Statements
+let score;
+score = 45;
+if (score) {
+    // code to be executed if condition is true
+    console.log("You passed!");
+
+} else {
+    // code to be executed if condition is false
+    console.log("You failed!");
+
+}
+//Comparison Operators
+// Equal to (==) and strict equal to (===)
+let value;
+value = "10";
+if (value === 10) {
+    console.log("True, they are equal"); // This will not execute
+}
+if(value== 10) {
+    console.log("True, they are equal"); 
+}
+// Not equal to (!=) and strict not equal to (!==)
+let val;
+val = 20;
+if (val !== "20") {
+    console.log("True, they are not equal"); // This will execute
+}
+
+if (val !=="20") {
+    console.log("True, they are not equal");
+}
+
+//More than two conditions
+let num;
+num =96;
+if (num >=95) {
+    console.log("Grade A");
+} else if (num >= 85) {
+    console.log("Grade B");
+}else if(num >= 75) {
+    console.log("Grade C");
+
+} else {
+    console.log("You have totally failed!");
+}
+
+// Functions
+//Function Declaration
+function functionName() {
+    console.log ("This is a function declaration");
+}
+// Call the function
+functionName();
+
+// Function with parameters
+function greet(name) {
+    console.log("Hello, How are you " + name + "?");
+}
+greet("Brenda");
+greet("Merab");
+greet("Ahereza");
+greet("Denise");
+greet("Catherine");
+
+// Function with return value
+function add(a, b) {
+    return a + b;
+}
+console.log(add(5, 10));
+console.log(add(10, 20));
+console.log(add(100, 200));
+console.log(add(5));
+console.log(add(7,8));
+console.log(add());
+
