@@ -143,3 +143,74 @@ console.log(add(5));
 console.log(add(7,8));
 console.log(add());
 
+// Arrow Functions
+const multiply =function (x, y){
+    return x * y;
+}
+// or using ES6 arrow function syntax
+const arrowFunc = () => {
+    console.log("This is an arrow function");
+}
+const multiplyArrow = (x, y) => x * y;
+console.log(multiply(3, 4));
+console.log("This is the result of arrow function: " + multiplyArrow(3, 4));
+
+// Arrow function with multiple lines
+const complexFunction = (a, b) => {
+    let sum = a + b;
+    let product = a * b;
+    let diff = b- a;
+
+    return {sum: sum, product, difference: diff};
+}
+console.log(complexFunction(5, 6));
+
+// Loops
+// For Loop
+const colors = ["Red", "Green", "Blue", "Yellow"];
+console.log(colors)
+// Methods under arrays i.e push, pop, shift, unshift, length, indexOf,includes,slice, splice, join
+// Length
+console.log(colors.length) // 4
+console.log(colors[1]) // Green
+console.log(colors[3]) // Yellow
+
+// push
+//colors.push("Purple") // adds an element to the end of the array
+//console.log(colors) // ["Red", "Green", "Blue", "Yellow", "Purple]
+
+// Pop
+//colors.pop() // removes the last element
+//console.log(colors) // ["Red", "Green", "Blue", "Yellow"]
+
+// splice
+colors.splice(2, 1) 
+console.log(colors)
+
+//shift
+colors.shift() // removes the first element
+console.log(colors) 
+
+//unshift
+//colors.unshift("Orange") // adds an element to the beginning of the array
+//console.log(colors)
+
+// IndexOf
+let index = colors.indexOf("Blue")
+colors.log(index)
+colors.splice(index, 1)
+console.log(colors)
+
+//Indexing
+
+console.log("Red");
+console.log("Green");
+console.log("Blue");
+console.log("Yellow");
+
+//Using a for loop to iterate through the array
+for (let i = 0; i < colors.length; i++) {
+    console.log("This is from the loop ", colors[i]);
+}
+
+// While Loop
