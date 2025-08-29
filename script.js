@@ -10,3 +10,5 @@ console.log(para2);
 // Changing the text content
 myHeading.style.color = "Blue";
 myHeading.innerHTML = "Hello! This is changed from JS";
+paragraph.textContent = "This is also changed from JS";
+para2[0].innerHTML = "This is also changed from JS using getElementsByClassName";
